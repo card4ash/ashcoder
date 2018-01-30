@@ -11,7 +11,7 @@ Some Basic Documentation
    :caption: Contents:
 
    Read The Docs <Readthedocs/installation>
-   Add User Ubuntu <Ubuntu/adduser>
+   Ubuntu <Ubuntu/adduser>
 
 
 
