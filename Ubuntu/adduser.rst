@@ -5,6 +5,12 @@ Ubuntu Basics
 How To Create a Sudo User on Ubuntu 
 *************************************
 
+Check Ubuntu Version
+
+.. code-block :: shell
+
+        lsb_release -a
+
 .. code-block :: shell
 
        adduser username
@@ -71,6 +77,24 @@ and paste this under ``# The primary network interface:``
 .. code-block :: shell
 
         sudo /etc/init.d/networking restart
+
+.. code-block :: shell
+
+        # The loopback network interface  
+        auto lo  
+        iface lo inet loopback  
+
+
+        # The primary network interface  
+        auto enp8s0 
+        iface enp8s0 inet static  
+        address 192.168.11.95
+        netmask 255.255.255.0
+        gateway 192.168.11.1
+        dns-nameservers 8.8.8.8 8.8.4.4 
+
+
+``sudo ifdown enp8s0 && sudo ifup enp8s0``
 
 ********************************************
 HA proxy
