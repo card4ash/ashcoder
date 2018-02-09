@@ -13,6 +13,7 @@ Some Basic Documentation
    Read The Docs <Readthedocs/installation>
    Ubuntu <Ubuntu/adduser>
    Ubuntu Time <Ubuntu/time>
+   Ubuntu Netstat <Ubuntu/netstat>
 
 
 
